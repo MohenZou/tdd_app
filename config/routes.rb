@@ -1,4 +1,11 @@
 TddApp::Application.routes.draw do
+  root :to => 'shows#index'
+
+  resources :shows
+
+  # get "shows/index"
+  # get "shows/show"
+  # get "shows/new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
