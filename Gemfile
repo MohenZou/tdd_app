@@ -7,10 +7,8 @@ gem 'rails', '4.0.0'
 gem 'sqlite3'
 
 gem 'rspec-rails'
-
-group :test do
-  gem 'capybara'
-end
+gem 'capybara'
+gem 'database_cleaner'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

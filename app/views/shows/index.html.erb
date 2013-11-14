@@ -1,0 +1,8 @@
+<h1>Show List</h1>
+<div>
+	<% @shows.each do |show| %>
+		<p><%= show.name %> <%= show.place %> <%= link_to "Edit", { :action => "edit", :controller => "shows", :id => show.id } %>
+		<br />
+	<% end %>
+</div>
+<a href="/shows/new">New</a>
